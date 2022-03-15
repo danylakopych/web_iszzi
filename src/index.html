@@ -14,9 +14,11 @@
 
     <!-- Header -->
     <header class="header">
-        <div class="header__logo">
-            <img src="img/logo.png" alt="logo">
-        </div>
+        <a href="#">
+            <div class="header__logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+        </a>
         <h1 class="title">My site</h1>
     </header>
 
@@ -24,13 +26,13 @@
         <!-- Navigation -->
         <nav class="nav">
             <ul class="nav__list">
-                <a href="">
+                <a href="#">
                     <li>Home</li>
                 </a>
-                <a href="">
+                <a href="#">
                     <li>About</li>
                 </a>
-                <a href="">
+                <a href="#">
                     <li>Contact</li>
                 </a>
             </ul>
@@ -40,13 +42,13 @@
         <section class="main">
             <form class="main__form" action="" method="get">
                 <label for="name">Name, Surname</label>
-                <input class="text" type="text" id="name">
+                <input class="text" type="text" id="name" required>
 
                 <label for="email">E-mail</label>
-                <input class="text" type="email" id="email">
+                <input class="text" type="email" id="email" required>
 
                 <label for="select">City</label>
-                <select class="text" name="city" id="select" form="form">
+                <select class="text" name="city" id="select" form="form" required>
                     <option value="kyiv">Kyiv</option>
                     <option value="che">Chernigiv</option>
                     <option value="liu">Liubech</option>
@@ -54,17 +56,17 @@
 
                 <div class="main__form-answer">
                     <label for="checkbox">Answer</label>
-                    <input type="checkbox" name="" id="checkbox">
+                    <input type="checkbox" name="" id="checkbox" required>
                 </div>
 
                 <div class="main__form-radio">
                     <label for="sex_m">M</label>
-                    <input type="radio" name="sex" id="sex_m">
+                    <input type="radio" name="sex" id="sex_m" required>
                     <label for="sex_w">W</label>
-                    <input type="radio" name="sex" id="sex_w">
+                    <input type="radio" name="sex" id="sex_w" required>
                 </div>
 
-                <textarea class="text" wrap="off" name="textarea" id="textarea" cols="30" rows="5"></textarea>
+                <textarea class="text" wrap="off" name="textarea" id="textarea" cols="30" rows="5" required></textarea>
                 <input class="main__form-btn" type="submit" value="OK">
             </form>
 
